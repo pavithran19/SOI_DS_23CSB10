@@ -1,0 +1,15 @@
+function getUniqueValues(arr2) {
+    let uniqueArr = [];
+    let seen = {};  
+
+    for (let i = 0; i < arr2.length; i++) {
+        if (!seen[arr2[i]]) {  
+            uniqueArr.push(arr2[i]); 
+            seen[arr2[i]] = true;  
+        }
+    }
+    
+    return uniqueArr;
+}
+let arr2=[25,74,21,30,74];
+console.log(getUniqueValues(arr2)); 
